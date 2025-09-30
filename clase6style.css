@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 35%;
+    border-style: solid;
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.left, .right {
+    display: grid;
+    height: 150px;
+    
+}
+
+.right {
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left-style: solid;
+    align-items: center;
+    justify-items: center;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.top {
+    display: grid;
+    justify-content: space-between;
+}
