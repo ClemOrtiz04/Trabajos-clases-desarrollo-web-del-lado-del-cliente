@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            border-style: solid;
+            width: 35%;
+        }
+        .container, .izquierda, .derecha {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .derecha {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .punto {
+        height: 50 px;
+        width: 50 px;
+        background-color: #000;
+        border-radius: 50%;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="izquierda">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+        <div class="derecha">
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+            <div class="punto"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

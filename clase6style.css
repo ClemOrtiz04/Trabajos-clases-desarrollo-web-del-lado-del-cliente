@@ -26,14 +26,23 @@
 }
 
 .left {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
     justify-items: center;
-    
 }
 
 .top {
     display: grid;
     justify-content: space-between;
+    align-items: center;
+}
+
+.medium {
+    display: grid;
+    align-items: center;
+}
+
+.bottom {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
 }
