@@ -1,0 +1,37 @@
+div:not(.container) {
+    border-style: solid;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "aside content content content"
+        "aside footer footer footer";
+}
+
+.header {
+    height: 10vh;
+    grid-area: header;
+}
+
+.aside {
+    height: auto;
+    grid-area: aside;
+}
+
+.content {
+    height: 75vh;
+    grid-area: content;
+}
+
+.footer {
+    height: 10vh;
+    grid-area: footer;
+}
+
+.columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
