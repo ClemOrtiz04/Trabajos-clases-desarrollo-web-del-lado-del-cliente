@@ -11,6 +11,11 @@ function App() {
       id: 456,
       nombre: 'Maritza Patrick',
       telefono: '6672849123'
+    },
+    {
+      id: 789,
+      nombre: 'Popo Katepet',
+      telefono: '6637849211'
     }
   ]
 
