@@ -16,10 +16,18 @@ function App() {
 
   return (
     <>
-      <input placeholder='Proporcione una tarea:' 
-        type="text" value={ text } onChange={ handleText}/>
-      <button onClick={ handleAdd }>Agregar</button>
-      <Tareas data = { tasks } />
+      <div className="container mt-3">
+        <div className='d-flex mb-4'>
+          <input className='form-control' placeholder='Proporcione una tarea:' 
+          type="text" value={ text } onChange={ handleText}/>
+          <button  className ='btn btn-outline-secondary'onClick={ handleAdd }>Agregar</button>
+        </div>
+        
+        { tasks.length > 0 &&
+        <Tareas data = { tasks } />
+        }
+      </div>
+      
     </>
   )
 }

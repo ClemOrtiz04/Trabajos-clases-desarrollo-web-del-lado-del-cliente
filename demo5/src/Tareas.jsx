@@ -3,7 +3,7 @@ export default function Tareas ( { data }) {
         <>
             <h3>Lista de tareas</h3>
 
-            <table>
+            <table className="table">
                 <thead>
                     <tr>
                         <th>Tarea</th>
