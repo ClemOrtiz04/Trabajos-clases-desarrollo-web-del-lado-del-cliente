@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState([]) //Array para la inf de paises
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all?fields=name,flags')
+    fetch('https://restcountries.com/v3.1/all?fields=name,flags,population')
     .then((res) => res.json())
     .then((result) => setData(result))
   }, []); //Ejecutar solo la primera vez que se crea el componente
@@ -17,7 +17,14 @@ function App() {
         <ul className='list-group mt-4'>
           {
             data.map((item) => (
-              <li className='list-group-item' key={ item }>{ item.name.common }</li>
+              <li className='list-group-item' key={ item }>
+                { item.name.common } - { item.population }
+                <ul className='list-group'>
+                  <li className='list-group-item mt-3 mb-3'>
+                    {item.name.official}
+                  </li>
+                </ul>
+              </li>
             ))
           }
         </ul>
