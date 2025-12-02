@@ -4,7 +4,7 @@ import Tareas from './Tareas'
 
 function App() {
   const [text, setText] = useState('')
-  const [tasks, setTasks] = useState(['Estudiar', 'Jugar', 'Limpiar']);
+  const [tasks, setTasks] = useState([]);
 
   function handleText (element) {
     setText(element.target.value);
