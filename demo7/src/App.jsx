@@ -17,8 +17,8 @@ function App() {
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Name and population</th>
+              <th scope="col">Official nameg</th>
               <th scope="col">LatLng</th>
               <th scope="col">Maps</th>
               <th scope="col">Timezones</th>
